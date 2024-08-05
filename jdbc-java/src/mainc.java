@@ -206,3 +206,77 @@ public class Calc {
 	}
 
 }
+
+=================
+	import java.util.Scanner;
+
+public class Sclac {
+
+	double no1;
+	
+	double sin;
+	double cos;
+	double power;
+	double sqrt;
+	
+	Scanner scanner=new Scanner(System.in);
+	
+	 void userinput() {
+		   
+		   System.out.println("Enter the num1");
+		   no1=scanner.nextInt();
+		   
+		      
+	   }
+	 
+	 
+	 void selection() {
+		 
+		   System.out.println("1----sin");
+		   System.out.println("2----cos");
+		   System.out.println("3----sqrt");
+		   System.out.println("4----power");
+		   
+		   
+		   System.out.println("Enter the choice");
+			  int choice = scanner.nextInt();
+			  
+			  if (choice==1) {
+				  
+				  
+				  sin= Math.sin(no1);
+				  System.out.println("sin of "+ no1+ " " +":"+ sin);
+				  
+				  
+				
+			} else if (choice==2) {
+				  
+				  cos=Math.cos(no1);
+				  
+				  System.out.println("cos of "+ no1+"and"+":"+ cos);
+				
+			}
+			else if (choice==3) {
+				  
+				 sqrt =Math.sqrt(no1);
+				  
+				  System.out.println(sqrt);
+				
+			}
+			  
+			else if (choice==4) {
+				
+				System.out.println("Enter the num1");
+				 int no2=scanner.nextInt();
+				  
+				 power =Math.pow(no1, no2);
+				  
+				  System.out.println(power);
+				
+			}else {
+				System.out.println("invalid choice!!!");
+			}
+	 }
+
+}
+
